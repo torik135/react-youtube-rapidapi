@@ -1,5 +1,5 @@
 import { Stack } from '@mui/material';
-import { categories } from '../../utils/constans';
+import { categories } from '../../utils';
 
 const Sidebar = () => {
   const selectedCategory = 'New';
