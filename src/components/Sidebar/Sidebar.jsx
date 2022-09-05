@@ -1,8 +1,8 @@
 import { Stack } from '@mui/material';
 import { categories } from '../../utils';
 
-const Sidebar = () => {
-  const selectedCategory = 'New';
+const Sidebar = (props) => {
+  const { selectedCategory, setSelectedCategory } = props;
 
   return (
     <Stack
@@ -21,6 +21,7 @@ const Sidebar = () => {
             color: '#fff',
           }}
           key={`${cat.name}-${Math.random()}`}
+          onClick={() => setSelectedCategory(cat.name)}
         >
           <span
             style={{

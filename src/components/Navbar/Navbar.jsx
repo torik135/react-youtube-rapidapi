@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { SearchBar } from '../SearchBar/SearchBar';
+import { SearchBar } from '../Search/SearchBar';
 import { logo } from '../../utils';
 
 const Navbar = () => {
