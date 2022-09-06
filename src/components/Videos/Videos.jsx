@@ -3,9 +3,16 @@ import { Stack, Box } from '@mui/material';
 import { VideoCard, ChannelCard } from '../';
 
 const Videos = (props) => {
-  const { videos } = props;
+  const { videos, direction } = props;
+  if (!videos?.length) return 'Loading...';
+
   return (
-    <Stack direction='row' flexWrap='wrap' justifyContent='start' gap={2}>
+    <Stack
+      direction={direction || 'row'}
+      flexWrap='wrap'
+      justifyContent='start'
+      gap={2}
+    >
       {videos.map((items) => {
         <Box key={Math.random()}>
           {items.id.videoId && <VideoCard video={item} />}
