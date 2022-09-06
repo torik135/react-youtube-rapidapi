@@ -1,6 +1,7 @@
 {
-  "name": "front-react",
+  "name": "react-youtube-rapidapi",
   "version": "0.1.0",
+  "author": "torik135",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
