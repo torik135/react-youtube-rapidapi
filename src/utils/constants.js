@@ -5,7 +5,7 @@ import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import SchoolIcon from '@mui/icons-material/School';
-import FaceRetouchNaturalIcon from '@mui/icons-material/FaceRetouchNatural';
+import FaceRetouchingNaturalIcon from '@mui/icons-material/FaceRetouchingNatural';
 import CheckroomIcon from '@mui/icons-material/Checkroom';
 import GraphicEqIcon from '@mui/icons-material/GraphicEq';
 import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
@@ -28,7 +28,7 @@ export const categories = [
     { name: 'Live', icon: <LiveTvIcon /> },
     { name: 'Sport', icon: <FitnessCenterIcon /> },
     { name: 'Fashion', icon: <CheckroomIcon /> },
-    { name: 'Beauty', icon: <FaceRetouchNaturalIcon /> },
+    { name: 'Beauty', icon: <FaceRetouchingNaturalIcon /> },
     { name: 'Comedy', icon: <TheaterComedyIcon /> },
     { name: 'Gym', icon: <FitnessCenterIcon /> },
     { name: 'Crypto', icon: <DeveloperModeIcon /> },

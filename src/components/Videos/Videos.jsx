@@ -13,12 +13,12 @@ const Videos = (props) => {
       justifyContent='start'
       gap={2}
     >
-      {videos.map((items) => {
+      {videos.map((items) => (
         <Box key={Math.random()}>
-          {items.id.videoId && <VideoCard video={item} />}
-          {items.id.channelId && <ChannelCard channelDetail={item} />}
-        </Box>;
-      })}
+          {items.id.videoId && <VideoCard video={items} />}
+          {items.id.channelId && <ChannelCard channelDetail={items} />}
+        </Box>
+      ))}
     </Stack>
   );
 };

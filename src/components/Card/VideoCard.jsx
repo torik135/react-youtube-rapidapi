@@ -27,7 +27,7 @@ const VideoCard = (props) => {
     >
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <CardMedia
-          image={snippet?.thumbnail?.high?.url}
+          image={snippet?.thumbnail?.high?.url || demoThumbnailUrl}
           alt={snippet?.title}
           sx={{ width: { xs: '100%', sm: '358px', md: '320px' }, height: 180 }}
         />
@@ -39,7 +39,11 @@ const VideoCard = (props) => {
           </Typography>
         </Link>
         <Link
-          to={snippet?.channelId ? `/channel/${channelId}` : demoChannelUrl}
+          to={
+            snippet?.channelId
+              ? `/channel/${snippet?.channelId}`
+              : demoChannelUrl
+          }
         >
           <Typography variant='subtitle2' fontWeight='bold' color='#333'>
             {snippet?.channelTitle || demoChannelTitle}

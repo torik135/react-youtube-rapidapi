@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { useNavigation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Paper, IconButton } from '@mui/material';
 import { Search } from '@mui/icons-material';
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const navigate = useNavigation();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();

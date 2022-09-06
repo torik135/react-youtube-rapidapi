@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import { Box, Stack, Typography } from '@mui/material';
-import { CheckCircel } from '@mui/icons-material';
+import { CheckCircle } from '@mui/icons-material';
 
 import { Videos } from '../';
 import { fetchAPI } from '../../utils';
@@ -19,7 +19,7 @@ const VideoDetail = () => {
     fetchAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`).then(
       (data) => setVideos(data.items[0]),
     );
-  }, []);
+  }, [id]);
 
   if (!videoDetail?.snippet) return 'Loading...';
 
@@ -55,7 +55,7 @@ const VideoDetail = () => {
                   color='#fff'
                 >
                   {channelTitle}
-                  <CheckCircel
+                  <CheckCircle
                     sx={{ fontSize: '12px', color: 'gray', ml: '5px' }}
                   />
                 </Typography>
