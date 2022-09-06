@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = '';
+const BASE_URL = 'youtube-v31.p.rapidapi.com';
 
 const options = {
     url: BASE_URL,
@@ -9,7 +9,7 @@ const options = {
     },
     headers: {
         'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_KEY,
-        'X-RapidAPI-Host': 'apihost',
+        'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com',
     },
 };
 
