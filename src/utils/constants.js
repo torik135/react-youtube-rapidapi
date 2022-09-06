@@ -34,7 +34,9 @@ export const categories = [
     { name: 'Crypto', icon: <DeveloperModeIcon /> },
 ];
 
-export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
+export const demoThumbnailUrl = 'https://thisisurl.com/pic.png';
 export const demoChannelUrl = 'channel/thischannel';
 export const demoChannelTitle = 'this channel title';
+export const demoVideoUrl = '/thisisurl';
 export const demoVideoTitle = 'this video title';
+export const demoProfilePicture = 'https://thisisurl.com'

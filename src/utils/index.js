@@ -3,5 +3,7 @@ export { default as categories } from './constants';
 export { default as demoThumbnailUrl } from './constants';
 export { default as demoChannelUrl } from './constants';
 export { default as demoChannelTitle } from './constants';
+export { default as demoVideoUrl } from './constants';
 export { default as demoVideoTitle } from './constants';
+export { default as demoProfilePicture } from './constants';
 export { default as fetchAPI } from './fetchAPI';
