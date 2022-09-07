@@ -1,10 +1,10 @@
 import { Stack, Box } from '@mui/material';
 
-import { VideoCard, ChannelCard } from '../';
+import { VideoCard, ChannelCard, Loading } from '../';
 
 const Videos = (props) => {
   const { videos, direction } = props;
-  if (!videos?.length) return 'Loading...';
+  if (!videos?.length) return <Loading>'Loading...'</Loading>;
 
   return (
     <Stack

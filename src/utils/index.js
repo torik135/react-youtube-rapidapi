@@ -1,4 +1,5 @@
 export { logo } from './constants';
+export { color } from './constants';
 export { categories } from './constants';
 export { demoThumbnailUrl } from './constants';
 export { demoChannelUrl } from './constants';

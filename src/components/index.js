@@ -8,3 +8,4 @@ export { VideoDetail } from './Videos/VideoDetail';
 export { Videos } from './Videos/Videos';
 export { VideoCard } from './Card/VideoCard';
 export { ChannelCard } from './Card/ChannelCard';
+export { Loading } from './Utils/Loading';

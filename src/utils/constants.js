@@ -14,6 +14,13 @@ import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
 export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
 
+export const color = {
+    sunset1: 'rgb(41, 52, 98)',
+    sunset2: 'rgb(214, 28, 78)',
+    sunset3: 'rgb(254, 177, 57)',
+    sunset4: 'rgb(255, 248, 10)',
+}
+
 export const categories = [
     { name: 'New', icon: <HomeIcon /> },
     { name: 'Code', icon: <CodeIcon /> },

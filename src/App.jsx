@@ -7,16 +7,17 @@ import {
   SearchFeed,
   Navbar,
 } from './components';
+import { color } from './utils'
 
 const App = () => {
-  <BrowserRouter sx={{ backgroundColor: '#333' }}>
+  <BrowserRouter sx={{ backgroundColor: color.sunset1 }}>
     <Box>
       <Navbar />
       <Routes>
-        <Route to='/' exact element={<Feed />} />
-        <Route to='/video/:id' element={<VideoDetail />} />
-        <Route to='/channel/:id' element={<ChannelDetail />} />
-        <Route to='/search/:searchTerm' element={<SearchFeed />} />
+        <Route path='/' exact element={<Feed />} />
+        <Route path='/video/:id' element={<VideoDetail />} />
+        <Route path='/channel/:id' element={<ChannelDetail />} />
+        <Route path='/search/:searchTerm' element={<SearchFeed />} />
       </Routes>
     </Box>
   </BrowserRouter>;

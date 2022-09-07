@@ -1,3 +1,11 @@
+:root {
+  /* color sunset */
+  --sunset1: rgb(41, 52, 98);
+  --sunset2: rgb(214, 28, 78);
+  --sunset3: rgb(254, 177, 57);
+  --sunset4: rgb(255, 248, 10);
+}
+
 html,
 body {
   margin: 0;
@@ -7,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #000;
 }
 
 ::-webkit-scrollbar {
@@ -19,6 +27,19 @@ a {
   background-color: rgba(114, 113, 113, 1);
   border-radius: 10px;
   height: 200px;
+}
+
+.category-area {
+  transition: background-color .3s ease;
+  :hover {
+    background-color: var(--sunset3) !important;
+    color: #fff !important;
+
+    span {
+      color: #fff !important;
+      opacity: 1 !important;
+    }
+  }
 }
 
 .category-btn {

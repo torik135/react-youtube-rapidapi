@@ -1,7 +1,7 @@
 import { Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { SearchBar } from '../';
-import { logo } from '../../utils';
+import { logo, color } from '../../utils';
 
 const Navbar = () => {
   <Stack
@@ -9,8 +9,8 @@ const Navbar = () => {
     p={2}
     alignItems='center'
     sx={{
-      position: 'sticky',
-      backgroundColor: '#333',
+      position: 'relative',
+      backgroundColor: color.sunset1,
       top: 0,
       justifyContent: 'space-between',
     }}

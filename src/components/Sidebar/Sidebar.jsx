@@ -1,23 +1,24 @@
 import { Stack } from '@mui/material';
-import { categories } from '../../utils';
+import { categories, color } from '../../utils';
 
 const Sidebar = (props) => {
   const { selectedCategory, setSelectedCategory } = props;
 
   return (
     <Stack
+      className='category-area'
       direction='row'
       sx={{
         overflowX: 'auto',
         height: { sx: 'auto', md: '95%' },
-        flexDirection: { md: 'row' },
+        flexDirection: { md: 'column' },
       }}
     >
       {categories.map((cat) => (
         <button
           className='category-btn'
           style={{
-            background: cat.name === selectedCategory && '#FC1503',
+            background: cat.name === selectedCategory && color.sunset3,
             color: '#fff',
           }}
           key={`${cat.name}-${Math.random()}`}
@@ -25,7 +26,7 @@ const Sidebar = (props) => {
         >
           <span
             style={{
-              color: cat.name === selectedCategory ? '#fff' : 'red',
+              color: cat.name === selectedCategory ? '#fff' : color.sunset3,
               marginRight: '15px',
             }}
           >
