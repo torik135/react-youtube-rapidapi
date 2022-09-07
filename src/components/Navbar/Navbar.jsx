@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { SearchBar } from '../';
 import { logo, color } from '../../utils';
 
-const Navbar = () => {
+const Navbar = () => (
   <Stack
     direction='row'
     p={2}
@@ -19,7 +19,7 @@ const Navbar = () => {
       <img src={logo} alt='web logo' height={45} />
     </Link>
     <SearchBar />
-  </Stack>;
-};
+  </Stack>
+);
 
 export { Navbar };
