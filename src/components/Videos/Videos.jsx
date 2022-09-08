@@ -4,7 +4,7 @@ import { VideoCard, ChannelCard, Loading } from '../';
 
 const Videos = (props) => {
   const { videos, direction } = props;
-  if (!videos?.length) return <Loading>'Loading...'</Loading>;
+  if (!videos?.length) return <Loading>Loading...</Loading>;
 
   return (
     <Stack
